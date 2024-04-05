@@ -1,50 +1,70 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-header{
+/* Estilos para o cabeçalho */
+header {
     background-color: #333;
     color: #fff;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
-section{
+/* Estilos para a seção de informações */
+.info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-section .forms{
-    padding: 20px; /* padding é margem/espaço de dentro do div*/
-    margin: 10px; /* margin é a margem/espaço de fora da div*/
-    background-color:darkgray;
-    border: 1px solid black;
+.info .img {
+    flex: 1;
+    margin-right: 20px;
 }
 
-section .info{
-    display: flex;
-    align-content: space-around;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
-
-section .info p{
-    height: 230px;
-    width: 900px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #000000;
+.info p {
+    flex: 2;
     text-align: justify;
-    overflow: hidden;
-    justify-content: center;
 }
-section .info .img{
-    display: flex;
-    justify-content: center;
-    margin: 11px;
+
+/* Estilos para o formulário */
+.forms {
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.forms label,
+.forms input,
+.forms textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.forms input,
+.forms textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.forms .input-group-addon {
+    padding: 5px;
+}
+
+.forms input[type="radio"] {
+    display: inline;
+    margin-right: 5px;
+}
+
+.forms input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.forms input[type="submit"]:hover {
+    background-color: #555;
 }
